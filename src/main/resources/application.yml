@@ -28,5 +28,5 @@ management:
     tags:
       application: ${spring.application.name}
 hiker:
-  api: YOUR_TOKEN
-  token: f61x4ard26dhuyb579eqbkdcxj7jlru5
+  api: https://api.hikerapi.com/v1
+  token: YOUR_TOKEN
