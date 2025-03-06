@@ -13,13 +13,14 @@ import ru.app.instagramstoriesmetric.dto.StoryCheckRequest;
 import ru.app.instagramstoriesmetric.dto.StoryCheckResponse;
 import ru.app.instagramstoriesmetric.dto.hiker.HikerApiResponseLinks;
 import ru.app.instagramstoriesmetric.entity.StoryEntity;
+import ru.app.instagramstoriesmetric.exception.HikerAPIAuthenticationException;
+import ru.app.instagramstoriesmetric.exception.BadRequestException;
 import ru.app.instagramstoriesmetric.exception.StoryNotFoundException;
 import ru.app.instagramstoriesmetric.mapper.StoryMapper;
 import ru.app.instagramstoriesmetric.repository.StoryRepository;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.stream.StreamSupport;
@@ -80,6 +81,10 @@ public class StoryCheckServiceImpl implements StoryCheckService {
                 .retrieve()
                 .onStatus(code -> code == HttpStatus.NOT_FOUND,
                         response -> Mono.just(new StoryNotFoundException()))
+                .onStatus(code -> code == HttpStatus.UNAUTHORIZED,
+                        response -> Mono.just(new HikerAPIAuthenticationException()))
+                .onStatus(code -> code == HttpStatus.BAD_REQUEST,
+                        response -> Mono.just(new BadRequestException()))
                 .bodyToMono(HikerApiResponse.class)
                 .map(response -> convertToResponse(response, request.getUrl()))
                 .block(Duration.ofSeconds(10));

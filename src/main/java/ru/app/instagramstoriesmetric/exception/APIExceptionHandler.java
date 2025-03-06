@@ -29,14 +29,36 @@ public class APIExceptionHandler {
         return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
     }
 
-//    @ExceptionHandler(Exception.class)
-//    public ResponseEntity<StoryCheckResponse> handleException() {
-//        requestMetrics.incrementErrorCount();
-//        StoryCheckResponse response = new StoryCheckResponse();
-//
-//        response.setError("Something went wrong");
-//
-//        return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
-//    }
+    @ExceptionHandler(HikerAPIAuthenticationException.class)
+    public ResponseEntity<StoryCheckResponse> handleHikerAPIAuthenticationException() {
+        StoryCheckResponse response = new StoryCheckResponse();
+
+        response.setError("Bad HikerAPI token");
+        response.setExists(false);
+
+        requestMetrics.incrementErrorCount();
+        return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);
+    }
+
+    @ExceptionHandler(BadRequestException.class)
+    public ResponseEntity<StoryCheckResponse> handleBadRequestException() {
+        StoryCheckResponse response = new StoryCheckResponse();
+
+        response.setError("Url/ID is empty or bad format");
+        response.setExists(false);
+
+        requestMetrics.incrementErrorCount();
+        return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<StoryCheckResponse> handleException() {
+        requestMetrics.incrementErrorCount();
+        StoryCheckResponse response = new StoryCheckResponse();
+
+        response.setError("Something went wrong");
+
+        return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 
 }
