@@ -5,34 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c9f8957-e3ba-431d-901c-fa13455c6001" name="Changes" comment="ready">
-      <change afterPath="$PROJECT_DIR$/prometheus/01JNJTQJMM01W40M2CCN8WN4X9/chunks/000001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/01JNJTQJMM01W40M2CCN8WN4X9/index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/01JNJTQJMM01W40M2CCN8WN4X9/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/01JNJTQJMM01W40M2CCN8WN4X9/tombstones" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/01JNJTQJTD8QKAEKZM2XC3MJS9/chunks/000001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/01JNJTQJTD8QKAEKZM2XC3MJS9/index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/01JNJTQJTD8QKAEKZM2XC3MJS9/meta.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/01JNJTQJTD8QKAEKZM2XC3MJS9/tombstones" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/chunks_head/000003" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/data/lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/data/queries.active" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/data/wal/00000005" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/data/wal/00000006" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/data/wal/00000007" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/queries.active" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/wal/00000003" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/wal/00000004" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/wal/00000005" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/wal/checkpoint.00000002/00000000" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/app/instagramstoriesmetric/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/app/instagramstoriesmetric/exception/HikerAPIAuthenticationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prometheus/data/wal/00000009" beforeDir="false" afterPath="$PROJECT_DIR$/prometheus/data/wal/00000009" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/app/instagramstoriesmetric/exception/APIExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/app/instagramstoriesmetric/exception/APIExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/app/instagramstoriesmetric/repository/StoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/app/instagramstoriesmetric/repository/StoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/app/instagramstoriesmetric/service/StoryCheckServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/app/instagramstoriesmetric/service/StoryCheckServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +57,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -136,8 +114,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\miraq\Desktop\InstagramStoriesMetric\src\main\resources\metrics" />
       <recent name="C:\Users\miraq\Desktop\InstagramStoriesMetric" />
+      <recent name="C:\Users\miraq\Desktop\InstagramStoriesMetric\src\main\resources\metrics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\miraq\Desktop\InstagramStoriesMetric\src\main\resources" />
@@ -268,6 +246,23 @@
       <workItem from="1741240446474" duration="31000" />
       <workItem from="1741240557141" duration="450000" />
     </task>
+    <task id="LOCAL-00001" summary="ready">
+      <option name="closed" value="true" />
+      <created>1741245019253</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741245019253</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ready">
+      <option name="closed" value="true" />
+      <created>1741245064093</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741245064093</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,12 +279,16 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/app/instagramstoriesmetric/service/StoryCheckServiceImpl.java</url>
-          <line>91</line>
+          <line>96</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
